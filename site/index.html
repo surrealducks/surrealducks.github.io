@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="tabs.js"></script>
+    <link rel="stylesheet" href="style.css"/>
+
+    <title>surrealducks is Peter Schmit.</title>
+    <div class="tab">
+        <button class="tablinks" onclick="openTab(event, 'About')" id="defaultOpen">About</button>
+        <button class="tablinks" onclick="openTab(event, 'Installations')">Installations</button>
+        <button class="tablinks" onclick="openTab(event, 'Videos')">Videos</button>
+        <button class="tablinks" onclick="openTab(event, 'Music')">Music</button>
+        <button class="tablinks" onclick="openTab(event, 'Contact')">Contact</button>
+    </div>
+
+    <div id="About" class="tabcontent">
+        <h3>surrealducks is Peter Schmit,</h3>
+        <p>a multimedia artist from Lincoln Nebraska.</p>
+    </div>
+
+    <div id="Installations" class="tabcontent">
+        <h3>bicycle</h3>
+        <p>Installed at EMA Open Studios in May 2023</p>
+        <video width="400" controls src="media/bikeVideo1.mov"></video>
+        <video width="400" controls src="media/bikeVideo2.mov"></video>
+        <p>An interactive installation combining physical elements, video projection, and music.  Audiences control the playback speed and direction of an ambient music piece using bike pedals and a potentiometer.</p>
+        <p>I created it for my Computation & Media Studio course at the Johnny Carson Center for Emerging Media Arts.</p>
+        <p>I created the ambient music (listen below) in Logic Pro using a seven-string guitar in an altered tuning.  I filmed the footage in my backyard, and programmed the interactions in the Arduino IDE and p5.js.</p>
+        <p>More info <a href="https://docs.google.com/document/d/1SG_FYSMgrmjD5pV1S4fb2T19s8Rtj8yk2oAYaV7nWzE/edit?usp=sharing">here</a>.</p>
+        <audio controls src="media/bicycleAudio.wav"></audio>
+    </div>
+
+    <div id="Videos" class="tabcontent">
+        <h3>Primer (2004) but it's just the conjunctions</h3>
+        <p>A collage of connective tissue.</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/ivrYIQT4Y1c?si=rY6KrQsG5DC-E4X1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+    <div id="Music" class="tabcontent">
+        <h3>PERSEVERATOR</h3>
+        <h4>SURVIVAL</h4>
+        <p>An experimental solo album made in Spring 2024.<br>
+        <a href="https://perseverator.bandcamp.com/">Bandcamp</a> here.</p>
+    </div>
+
+    <div id="Contact" class="tabcontent">
+        <h3>Contact</h3>
+        <p>email: peternschmit@gmail.com</p>
+    </div>
+
+    <!--on page load, display "About" tab-->
+    <script>
+        document.getElementById("defaultOpen").click();
+    </script>
+</head>
+<body>
+</body>
+
+</html>
